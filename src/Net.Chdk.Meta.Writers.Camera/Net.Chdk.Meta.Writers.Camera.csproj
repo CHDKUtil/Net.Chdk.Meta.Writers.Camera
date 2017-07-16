@@ -2,9 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Description>CHIMP camera metadata base writers</Description>
     <RootNamespace>Net.Chdk.Meta.Writers.Camera</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.1.1</Version>
+    <Product>CHIMP</Product>
+    <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Net.Chdk.Meta.Writers.Camera</Title>
+    <PackageVersion>$(Version)-alpha</PackageVersion>
+    <Authors>Dmitry Shechtman</Authors>
+    <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera</RepositoryUrl>
+    <PackageTags>chimp meta writer camera</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -17,16 +34,9 @@
     <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
 
-  <Import Project="..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.projitems" Label="Shared" />
-
   <ItemGroup>
-    <PackageReference Include="Net.Chdk.Meta.Model.Camera" Version="0.1.0-alpha" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Base\src\Net.Chdk.Meta.Providers.Base\Net.Chdk.Meta.Providers.Base.csproj" />
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Core\src\Net.Chdk.Meta.Providers.Core\Net.Chdk.Meta.Providers.Core.csproj" />
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Writers.Camera.Core\src\Net.Chdk.Meta.Writers.Camera.Core\Net.Chdk.Meta.Writers.Camera.Core.csproj" />
+    <PackageReference Include="Net.Chdk.Meta.Providers.Base" Version="0.1.0-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Writers.Camera.Core" Version="0.1.0-alpha" />
   </ItemGroup>
 
 </Project>
