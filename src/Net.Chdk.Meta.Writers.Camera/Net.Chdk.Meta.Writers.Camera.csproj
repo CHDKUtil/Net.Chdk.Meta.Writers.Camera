@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.3.0</Version>
+    <Version>0.4.0</Version>
+    <VersionSuffix>alpha</VersionSuffix>
     <Product>CHIMP</Product>
     <Authors>Dmitry Shechtman</Authors>
     <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
@@ -16,9 +17,9 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Net.Chdk.Meta.Writers.Camera</Title>
-    <PackageVersion>$(Version)-alpha</PackageVersion>
+    <PackageVersion>$(Version)-$(VersionSuffix)</PackageVersion>
+    <PackageLicenseExpression>GPL-2.0-or-later</PackageLicenseExpression>
     <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera</RepositoryUrl>
     <PackageTags>chimp meta writer camera</PackageTags>
@@ -35,8 +36,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Net.Chdk.Meta.Providers.Base" Version="0.3.0-alpha" />
-    <PackageReference Include="Net.Chdk.Meta.Writers.Camera.Core" Version="0.3.0-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Providers.Base" Version="0.4.0-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Writers.Camera.Core" Version="0.4.0-alpha" />
   </ItemGroup>
 
 </Project>
